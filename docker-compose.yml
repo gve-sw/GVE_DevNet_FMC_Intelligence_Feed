@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build:
+      context: intelligence-server
+    container_name: "server"
+    ports:
+      - "5000:5000"
+    environment:
+      TZ: "Asia/Singapore"
+
+# "America/Los_Angeles"
+# "Asia/Singapore"
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones “TZ Database Name”
